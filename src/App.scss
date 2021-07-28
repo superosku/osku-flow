@@ -1,0 +1,234 @@
+$c1: #344055;
+$c2: #76877D;
+$c3: #F5F5F5;
+$c4: #854D27;
+
+#root, body, html {
+  height: 100%;
+}
+
+input {
+  padding: 5px;
+}
+
+button {
+  background-color: $c1;
+  border: none;
+  color: $c3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($c1, 8%);
+    color: $c4;
+  }
+}
+
+.oskuflow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+
+  //max-height: 100%;
+  //overflow-y: hidden;
+
+  //display: flex;
+  //flex-direction: column;
+
+  .menu {
+    display: flex;
+    background-color: $c1;
+    align-items: center;
+
+    height: 50px;
+
+    span {
+      display: block;
+      padding: 15px;
+      color: white;
+
+      &.action {
+        cursor: pointer;
+
+        &:hover {
+          color: darken($c3, 30%)
+        }
+      }
+
+      &.brand {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .main {
+    //display: inline-block;
+    display: flex;
+
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    //max-height: 100%;
+
+    //> div {
+    //  flex-grow: 1;
+    //}
+  }
+}
+
+.tree-renderer {
+  flex-grow: 1;
+  min-width: 300px;
+
+  overflow-y: scroll;
+  //border: 1px solid $c1;
+  border-right: none;
+
+  .highlight {
+    outline: 1px solid $c1;
+  }
+}
+
+.tree-editor {
+  //display: inline-block;
+
+  background-color: $c2;
+  color: $c3;
+  border-right: 1px solid $c1;
+
+  width: 400px;
+  min-width: 400px;
+  overflow-y: scroll;
+
+  .tree-editor-child {
+    @for $i from 0 through 6 {
+      &.depth-#{$i} {
+        background-color: darken($c2, (1 + $i) * 5%);
+      }
+    }
+
+    border-bottom: 1px solid darken($c2, 10%);
+
+    .content {
+      background-color: $c2;
+      display: flex;
+      flex-direction: column;
+
+      border-bottom: 1px solid darken($c2, 10%);
+
+      &:hover {
+        box-shadow: inset 0 0 10px transparentize($c1, 0.5);
+      }
+
+      .header {
+
+        padding: 10px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+
+        .item-name {
+          display: flex;
+          align-items: center;
+
+          button {
+            margin-left: 10px;
+          }
+        }
+      }
+
+      .options {
+        .option {
+          padding: 0 10px;
+          display: flex;
+          flex-direction: row;
+
+          span {
+            width: 100px;
+          }
+
+          input {
+            flex-grow: 1;
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+
+    .children {
+      margin-left: 20px;
+
+      .add {
+        background-color: $c2;
+
+        select {
+          flex-grow: 1;
+          margin-right: 10px;
+        }
+
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.styles {
+  margin: 10px;
+
+  background-color: $c2;
+
+  .style-options {
+    border: 1px solid $c1;
+
+    &:not(:first-child) {
+      border-top: 0;
+    }
+
+    .class-name {
+      cursor: pointer;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .option {
+      display: flex;
+      flex-direction: column;
+
+      .option-name {
+        font-size: 14px;
+      }
+
+      .choice-list {
+        display: flex;
+        flex-wrap: wrap;
+
+        .choice-option {
+          cursor: pointer;
+          color: $c3;
+          background-color: $c4;
+          padding: 5px 10px;
+          display: block;
+          margin: 5px;
+          border-radius: 20px;
+
+          &.active {
+            background-color: darken($c4, 10%);
+          }
+        }
+      }
+    }
+  }
+}

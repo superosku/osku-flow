@@ -1,0 +1,314 @@
+{
+  "rootId": "1",
+  "classes": {
+    "main": {
+      "padding": "10px",
+      "backgroundColor": "#ACD"
+    },
+    "header": {},
+    "menuitem": {
+      "padding": "15px",
+      "color": "white",
+      "display": "block"
+    },
+    "mainmenu": {
+      "display": "flex",
+      "backgroundColor": "#852"
+    },
+    "centered": {
+      "display": "flex",
+      "alignItems": "center",
+      "justifyContent": "space-around"
+    },
+    "cent": {
+      "padding": "30px",
+      "fontSize": "30px"
+    },
+    "face": {
+      "width": "100px",
+      "height": "100px",
+      "borderRadius": "50px"
+    },
+    "face-container": {
+      "display": "flex",
+      "flexDirection": "column",
+      "justifyContent": "space-around",
+      "alignItems": "center"
+    },
+    "all-faces": {
+      "display": "flex",
+      "justifyContent": "space-around",
+      "padding": "20px"
+    },
+    "name": {
+      "color": "white",
+      "padding": "10px"
+    },
+    "heading": {
+      "fontSize": "24px"
+    }
+  },
+  "items": {
+    "1": {
+      "id": "1",
+      "type": "div",
+      "childrenIDs": [
+        "0whl3k",
+        "e6i02l"
+      ],
+      "classes": [],
+      "textContent": "",
+      "urlContent": ""
+    },
+    "0whl3k": {
+      "id": "0whl3k",
+      "type": "div",
+      "childrenIDs": [
+        "37dz7e",
+        "31bzu",
+        "u90auk"
+      ],
+      "classes": [
+        "mainmenu"
+      ],
+      "textContent": "",
+      "urlContent": ""
+    },
+    "e6i02l": {
+      "id": "e6i02l",
+      "type": "div",
+      "childrenIDs": [
+        "eh950g",
+        "2uatxc",
+        "6ptreb"
+      ],
+      "classes": [
+        "main"
+      ],
+      "textContent": "",
+      "urlContent": ""
+    },
+    "37dz7e": {
+      "id": "37dz7e",
+      "type": "span",
+      "childrenIDs": [],
+      "classes": [
+        "menuitem"
+      ],
+      "textContent": "Home",
+      "urlContent": ""
+    },
+    "31bzu": {
+      "id": "31bzu",
+      "type": "span",
+      "childrenIDs": [],
+      "classes": [
+        "menuitem"
+      ],
+      "textContent": "Info",
+      "urlContent": ""
+    },
+    "u90auk": {
+      "id": "u90auk",
+      "type": "span",
+      "childrenIDs": [],
+      "classes": [
+        "menuitem"
+      ],
+      "textContent": "About",
+      "urlContent": ""
+    },
+    "eh950g": {
+      "id": "eh950g",
+      "type": "div",
+      "childrenIDs": [
+        "glht9e"
+      ],
+      "classes": [
+        "centered"
+      ],
+      "textContent": "",
+      "urlContent": ""
+    },
+    "2uatxc": {
+      "id": "2uatxc",
+      "type": "div",
+      "childrenIDs": [
+        "b0w68k",
+        "qhwg1",
+        "4yarni"
+      ],
+      "classes": [
+        "all-faces"
+      ],
+      "textContent": "",
+      "urlContent": ""
+    },
+    "6ptreb": {
+      "id": "6ptreb",
+      "type": "div",
+      "childrenIDs": [
+        "vh0nis",
+        "3geuslu"
+      ],
+      "classes": [],
+      "textContent": "",
+      "urlContent": ""
+    },
+    "vh0nis": {
+      "id": "vh0nis",
+      "type": "span",
+      "childrenIDs": [],
+      "classes": [
+        "heading"
+      ],
+      "textContent": "A list",
+      "urlContent": ""
+    },
+    "3geuslu": {
+      "id": "3geuslu",
+      "type": "ul",
+      "childrenIDs": [
+        "styng",
+        "ueo6wr",
+        "2go6e"
+      ],
+      "classes": [],
+      "textContent": "",
+      "urlContent": ""
+    },
+    "styng": {
+      "id": "styng",
+      "type": "li",
+      "childrenIDs": [],
+      "classes": [],
+      "textContent": "First",
+      "urlContent": ""
+    },
+    "ueo6wr": {
+      "id": "ueo6wr",
+      "type": "li",
+      "childrenIDs": [],
+      "classes": [],
+      "textContent": "Second",
+      "urlContent": ""
+    },
+    "2go6e": {
+      "id": "2go6e",
+      "type": "li",
+      "childrenIDs": [],
+      "classes": [],
+      "textContent": "Third",
+      "urlContent": ""
+    },
+    "glht9e": {
+      "id": "glht9e",
+      "type": "span",
+      "childrenIDs": [],
+      "classes": [
+        "cent"
+      ],
+      "textContent": "Faces",
+      "urlContent": ""
+    },
+    "b0w68k": {
+      "id": "b0w68k",
+      "type": "div",
+      "childrenIDs": [
+        "9rqv7a",
+        "m1gcof"
+      ],
+      "classes": [
+        "face-container"
+      ],
+      "textContent": "",
+      "urlContent": ""
+    },
+    "qhwg1": {
+      "id": "qhwg1",
+      "type": "div",
+      "childrenIDs": [
+        "sfbth",
+        "ujzafi"
+      ],
+      "classes": [
+        "face-container"
+      ],
+      "textContent": "",
+      "urlContent": ""
+    },
+    "4yarni": {
+      "id": "4yarni",
+      "type": "div",
+      "childrenIDs": [
+        "9be8u",
+        "yozc1a"
+      ],
+      "classes": [
+        "face-container"
+      ],
+      "textContent": "",
+      "urlContent": ""
+    },
+    "9rqv7a": {
+      "id": "9rqv7a",
+      "type": "img",
+      "childrenIDs": [],
+      "classes": [
+        "face"
+      ],
+      "textContent": "",
+      "urlContent": "https://media-exp1.licdn.com/dms/image/C4E03AQFFAV_l1_N4bg/profile-displayphoto-shrink_400_400/0/1516873580651?e=1632960000&v=beta&t=Aef5Hoj_UkFPyQOrd6G2yLkYnuXxUuT5HIIuDDJo5Eg"
+    },
+    "m1gcof": {
+      "id": "m1gcof",
+      "type": "span",
+      "childrenIDs": [],
+      "classes": [
+        "name"
+      ],
+      "textContent": "Oskari",
+      "urlContent": ""
+    },
+    "sfbth": {
+      "id": "sfbth",
+      "type": "img",
+      "childrenIDs": [],
+      "classes": [
+        "face"
+      ],
+      "textContent": "",
+      "urlContent": "https://media-exp1.licdn.com/dms/image/C4E03AQFI47PZ1RecXQ/profile-displayphoto-shrink_400_400/0/1516873217265?e=1632960000&v=beta&t=Bo_SG0I9jtzQn-vQ2HJM3Ukn_fWh4LJi37ltmNX-kts"
+    },
+    "ujzafi": {
+      "id": "ujzafi",
+      "type": "span",
+      "childrenIDs": [],
+      "classes": [
+        "name"
+      ],
+      "textContent": "Ilari",
+      "urlContent": ""
+    },
+    "9be8u": {
+      "id": "9be8u",
+      "type": "img",
+      "childrenIDs": [],
+      "classes": [
+        "face"
+      ],
+      "textContent": "",
+      "urlContent": "https://media-exp1.licdn.com/dms/image/C4E03AQEZQDoP5tVg3g/profile-displayphoto-shrink_400_400/0/1516562263241?e=1632960000&v=beta&t=PyavugNtXHgykDyN1u0_d6dTOrtAO73ZpAPvQlvzWtE"
+    },
+    "yozc1a": {
+      "id": "yozc1a",
+      "type": "span",
+      "childrenIDs": [],
+      "classes": [
+        "name"
+      ],
+      "textContent": "Pasha",
+      "urlContent": ""
+    }
+  }
+}
